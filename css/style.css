@@ -1,0 +1,193 @@
+/* style.css */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding-top: 50px; /* 为固定头部留出空间 */
+  line-height: 1.6;
+}
+
+.pure-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pure-menu-heading {
+  font-size: 120%;
+}
+
+.content {
+  padding-top: 20px;
+}
+
+/* 导航栏样式 */
+.pure-menu-horizontal {
+  background-color: #f8f8f8; /* 添加浅灰色背景 */
+  border-bottom: 1px solid #ddd;
+}
+
+.pure-menu-list {
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+}
+
+.pure-menu-item {
+  margin: 0; /* 移除默认边距 */
+}
+
+.pure-menu-link {
+  display: block; /* 使链接块状显示 */
+  padding: 10px 20px; /* 增加内边距 */
+  color: #333; /* 默认文本颜色 */
+  text-decoration: none; /* 移除下划线 */
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 选中状态样式 */
+.pure-menu-item.pure-menu-active .pure-menu-link,
+.pure-menu-item .pure-menu-link:hover {
+  background-color: #007bff; /* 蓝色背景 */
+  color: #fff; /* 白色文本 */
+}
+
+/* 其余样式保持不变 */
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+/* 标签页样式 */
+.tabs {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden; /* 避免内容溢出 */
+}
+
+.tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* 使用 Flexbox 布局 */
+  background-color: #f0f0f0; /* 标签栏背景色 */
+}
+
+.tab-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-right: 1px solid #ddd; /* 标签之间的分隔线 */
+  transition: background-color 0.3s ease;
+}
+
+.tab-item:last-child {
+  border-right: none; /* 移除最后一个标签的分隔线 */
+}
+
+.tab-item.active {
+  background-color: #fff; /* 选中标签的背景色 */
+  font-weight: bold;
+}
+
+.tab-item:hover {
+  background-color: #e0e0e0; /* 鼠标悬停时标签的背景色 */
+}
+
+.tab-content {
+  display: none; /* 默认隐藏所有内容 */
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block; /* 显示当前选中的内容 */
+}
+
+/* Swiper 样式 */
+.swiper {
+  width: 100%;
+  height: 300px; /* 您可以根据需要调整这个高度 */
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 关键：使用 object-fit: cover; */
+}
+
+/* 项目详情页样式 */
+.project-detail-page {
+  /* 修改类名 */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project-detail-page h2 {
+  /* 修改类名 */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.project-content-wrapper {
+  border: 2px solid #ddd; /* 使用与页面边框相同的颜色 */
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.project-image-container {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-description {
+  /* 修改类名 */
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.project-detail-tech-stack {
+  /* 修改类名 */
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-detail-tech-stack li {
+  /* 修改类名 */
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+}
